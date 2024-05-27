@@ -3,8 +3,16 @@ print("변환하고 싶은 화씨 온도를 입력해주세요.")
 
 fahrenheit = float(input())
 
-def convert_fahrenheit_to_celsius(fahrenheit):
-    return (fahrenheit - 32) * 5 / 9
+def convert_fahrenheit_to_celsius(degree: float) -> float:
+    """화씨를 섭씨로 변환하는 함수
+
+    Args:
+        fahrenheit (float): 화씨 온도
+
+    Returns:
+        float: 섭씨 온도
+    """
+    return (degree - 32) * 5 / 9
 
 celsius = convert_fahrenheit_to_celsius(fahrenheit)
 
